@@ -1,0 +1,11 @@
+C:\Users\Yan\source\repos\FirstWebAp\InternetShop\bin\Debug\netcoreapp2.0\InternetShop.deps.json
+C:\Users\Yan\source\repos\FirstWebAp\InternetShop\bin\Debug\netcoreapp2.0\InternetShop.runtimeconfig.json
+C:\Users\Yan\source\repos\FirstWebAp\InternetShop\bin\Debug\netcoreapp2.0\InternetShop.runtimeconfig.dev.json
+C:\Users\Yan\source\repos\FirstWebAp\InternetShop\bin\Debug\netcoreapp2.0\InternetShop.dll
+C:\Users\Yan\source\repos\FirstWebAp\InternetShop\bin\Debug\netcoreapp2.0\InternetShop.pdb
+C:\Users\Yan\source\repos\FirstWebAp\InternetShop\obj\Debug\netcoreapp2.0\InternetShop.csprojResolveAssemblyReference.cache
+C:\Users\Yan\source\repos\FirstWebAp\InternetShop\obj\Debug\netcoreapp2.0\InternetShop.csproj.CoreCompileInputs.cache
+C:\Users\Yan\source\repos\FirstWebAp\InternetShop\obj\Debug\netcoreapp2.0\InternetShop.AssemblyInfoInputs.cache
+C:\Users\Yan\source\repos\FirstWebAp\InternetShop\obj\Debug\netcoreapp2.0\InternetShop.AssemblyInfo.cs
+C:\Users\Yan\source\repos\FirstWebAp\InternetShop\obj\Debug\netcoreapp2.0\InternetShop.dll
+C:\Users\Yan\source\repos\FirstWebAp\InternetShop\obj\Debug\netcoreapp2.0\InternetShop.pdb

@@ -1,0 +1,18 @@
+﻿
+@{
+
+    Layout = "_Layout";
+    ViewData["Title"] = "Покупка";
+}
+
+<form action="/Item/Buy/" method="post">
+
+    <input hidden type="text" name="ItemId" value="@ViewBag.Id" />
+    <label>Ваше имя</label>
+    <input type="text" name="Name" value="" />
+    <label>Ваша фамилия</label>
+    <input type="text" name="LastName" value="" />
+    <label>Ваш адрес</label>
+    <input type="text" name="Addres" value="" />
+    <input type="submit" value="Купить" />
+</form>

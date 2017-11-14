@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Интернет магазин</title>
+    <link href="~/css/@ViewData["CssFileName"]" rel="stylesheet" />
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <ul>
+            <li><a href="~/allItems">Все товары</a></li>
+            <li><a href="~/categories">Категории</a></li>
+        </ul>
+    </nav>
+    <div class="container body-content">
+        @RenderBody()
+        <hr/>
+        <footer>
+            <p>&copy; 2017 - Первый интернет магазин Яна Анциферова</p>
+        </footer>
+    </div>
+
+</body>
+</html>

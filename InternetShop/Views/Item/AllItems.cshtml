@@ -1,0 +1,28 @@
+﻿@model IEnumerable<Item>
+@{
+
+    Layout = "_Layout";
+    ViewData["Title"] = "Все товары ";
+    ViewData["CssFileName"] = "Style.css";
+}
+
+<h3>Все товары</h3>
+
+<div id="item-container">
+
+    @foreach (var item in Model)
+        {
+        <div class="item">
+            <div class="image-wrapper">
+                <div class="image">
+                    <a href="item\@item.Id">
+                        <img src="@item.Img" />
+                    </a>
+                </div>
+            </div>
+            <p>@item.Name</p>
+            <div class="price">@item.Price</div>
+            <p class="buy-button"><a href="/Item/Buy/@item.Id">Купить</a></p>
+        </div>
+    }
+</div>

@@ -1,0 +1,27 @@
+﻿@model IEnumerable<Category>
+@{
+
+    Layout = "_Layout";
+    ViewData["Title"] = "Категории ";
+    ViewData["CssFileName"] = "Style.css";
+}
+
+<h3>Каталог</h3>
+
+<div id="item-container">
+
+    @foreach (var item in Model)
+    {
+        <div class="item">
+            <div class="image-wrapper">
+                <div class="image">
+                    <a href="/@item.ItemName">
+                        <img src="@item.Img" />
+                    </a>
+                </div>
+            </div>
+            <p>@item.Name</p>
+        </div>
+    }
+</div>
+

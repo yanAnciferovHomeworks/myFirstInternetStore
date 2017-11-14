@@ -1,0 +1,92 @@
+﻿@model  Item;
+@{
+
+    Layout = "_Layout";
+    ViewData["Title"] = Model.Name;
+    ViewData["CssFileName"] = "ItemDetail.css";
+}
+
+
+    <div class="wrapper">
+        <div class="left">
+            <div class="mainInfo-wrapper">
+                <div>
+                    <h3>
+                        @Model.Name
+                    </h3>
+                </div>
+                <div class="image-wrapper">
+                    <img src=" @Model.Img" alt="">
+                </div>
+                <div>Осталось @Model.Count штук на складе</div>
+                <div class="info">
+                    <div class="price">@Model.Price</div>
+                    <div class="buy-button">
+                        <a href="~/Item/Buy/@Model.Id">Купить</a>
+                    </div>
+                </div>
+            </div>
+            <div class="property-wrapper">
+                <h3>Характеристики</h3>
+                <table>
+                    
+                    @foreach (var prop in Model.Properties)
+                    {
+                    <tr>
+                        <td>@prop.Name</td>
+                        <td>
+                            @prop.Value
+                        </td>
+                    </tr>
+                    }
+                </table>
+            </div>
+        </div>
+        <div class="feedback-wrapper">
+            <div class="feedback-header">
+                <span>Отзывы покупателей</span>
+                <span>@Model.Comments.Count</span>
+            </div>
+            <div class="feedback-container">
+                @foreach (var comment in Model.Comments)
+                {
+
+
+                <div class="feedback">
+                    <div class="feedback-head">
+                        <div class="name">
+                            @comment.UserName
+                        </div>
+                        <div class="date">
+                            @comment.Date
+                        </div>
+                    </div>
+                    <div class="message">
+                        @comment.Text
+                    </div>
+                </div>
+                }
+                <div>
+                    <h3>Оставьте ваш отзыв:</h3>
+                    <form method="post" action="~/Item/AddComment">
+                        <input hidden type="text" name="Id" value="@Model.Id">
+                        <p>
+                            <label for="Name">Ваше имя</label><br>
+                            <input type="text" name="Name">
+                        </p>
+                        <p>
+                            <label for="Text">Ваш отзыв</label><br>
+                            <textarea name="Text" ></textarea>
+                        </p>
+                        <p>
+                            <button type="submit">Отправить</button>
+                        </p>
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+

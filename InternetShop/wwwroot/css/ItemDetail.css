@@ -1,0 +1,109 @@
+﻿.second-info {
+    margin-top: 5em;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.price {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: .5em .5em;
+    font-size: 1.6em;
+    background-color: darksalmon;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+.image-wrapper {
+    height: 400px;
+}
+
+    .image-wrapper img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+.buy-button a {
+    display: inline-block;
+    background-color: rgb(45, 139, 45);
+    padding: 1em 2em;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    margin-left: 1em;
+}
+
+.buy-button {
+    display: inline-block;
+}
+
+table {
+    border: 1px solid black;
+    width: 100%;
+}
+
+td {
+    padding: .5em;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    display: flex;
+}
+
+    .wrapper > div {
+        flex-basis: 50%;
+    }
+
+.feedback-wrapper {
+    padding: 1em;
+}
+
+.feedback-header {
+    font-size: 1.3em;
+}
+
+.feedback-container {
+    margin-top: 1em;
+}
+
+.feedback {
+    border: 1px solid black;
+    margin-bottom: 1em;
+    padding: .3em;
+}
+
+    .feedback .name {
+        font-weight: bold;
+        margin-bottom: .4em;
+    }
+
+.feedback-head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.property-wrapper {
+    margin-top: 1em;
+}
+
+
+
+.info {
+    margin-top: 1em;
+}
+
+input {
+    width: 500px;
+}
+
+textarea {
+    width: 100%;
+    max-width: 500px;
+    max-height: 6em;
+}
